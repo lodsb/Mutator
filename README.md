@@ -1,28 +1,30 @@
-# TreeQuencer - Collaborative Rhythm Sequencing 
-![Screen-shot of prototype 1](p1.png "Screen-shot of prototype 1")
-![Screen-shot of prototype 2](p2.png "Screen-shot of prototype 2")
-![User study](treequencer_happy.png "People using one of the prototypes at the evaluation (video feed)")
+# Mutator - Genetic Algorithm Approach to Collaborative Music Creation
 
-This is the original source code for the prototypical rhythm sequencing application in the 
+This is the original source code for the prototypical beat / groove sequencing application in the 
 publication:
 
-Klügel, Niklas, Gerhard Hagerer, and Georg Groh. "TreeQuencer: Collaborative Rhythm Sequencing-A Comparative Study"
+Klügel, Niklas and Lindström, Andreas and Groh, Georg. "A Genetic Algorithm Approach to Collaborative Music Creation on a Multi-Touch Table
 
 Abstract:
-In this contribution we will show three prototypical applications that allow users to collaboratively create rhythmic structures with successively more degrees of freedom to generate rhythmic complexity. By means of a user study we analyze the impact of this on the users’ satisfaction and further compare it to data logged during the experiments that allow us to measure the rhythmic complexity created.
+Multi-touch interfaces provide new opportunities for collaborative
+music composing. In this report, an approach
+using genetic algorithms to evolve musical beats in a collaborative
+setting is presented. A prototype using a multitouch
+interface is developed and evaluated
 
-which can be found here: http://nime2014.org/proceedings/papers/498_paper.pdf
+which can be found here: http://speech.di.uoa.gr/ICMC-SMC-2014/images/VOL_1/0286.pdf , published in the proceedings of the ICMC2014
 
-The TreeQuencer project itself consists of three prototypes that offer slightly different sequencing, you can select the respective prototype in Settings.txt , check the publication for further details about their differences.
-It is originally a tabletop application but the framework also allows use with mouse input apart from TUIO and native win7 touch.
+Mutator is originally a tabletop application but the framework also allows use with mouse input apart from TUIO and native win7 touch.
 
 Dependencies:
 - reakt: https://github.com/lodsb/reakt
 - UltraCom: https://github.com/lodsb/UltraCom
+- mutant5000: https://github.com/lodsb/mutant5000
 
 - checkout and build + sbt publish for each of these
 
-- The real-time audio synthesis uses SuperCollider / ScalaCollider, therefore an additional SuperCollider installation is necessary.
+- The application only produces midi-data for controlling external instruments, the sequencing is performed in PureData (see additional .pd patch) 
+
 
 
 
